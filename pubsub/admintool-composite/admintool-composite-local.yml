@@ -4,3 +4,18 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8761/eureka
+
+http:
+ connection:
+  timeout: 10000
+ read:
+  timeout: 10000
+  
+feign:
+ period: 1000
+ maxPeriod: 5000
+ maxAttempt: 3
+ 
+b2bservice:
+ baseUrl: http://localhost:8088
+ serviceUrl: ${baseUrl}/b2bservice/fetchMtndetails
