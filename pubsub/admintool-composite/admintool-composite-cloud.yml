@@ -1,3 +1,9 @@
+spring:
+  rabbitmq:
+    addresses: 
+    username: admin
+    password: admin
+    
 eureka:
   client:
     fetch-registry: true
@@ -19,9 +25,3 @@ feign:
 b2bservice:
  baseUrl: http://ec2-13-233-84-230.ap-south-1.compute.amazonaws.com:8088
  serviceUrl: ${b2bservice.baseUrl}/b2bservice/fetchMtndetails
-
-spring:
-  rabbitmq:
-    addresses: 
-    username: admin
-    password: admin
