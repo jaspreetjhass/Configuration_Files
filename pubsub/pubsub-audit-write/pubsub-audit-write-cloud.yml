@@ -1,10 +1,4 @@
-eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://ec2-13-233-34-229.ap-south-1.compute.amazonaws.com:8762/eureka
-      
+
 spring:
   rabbitmq:
     addresses: ec2-13-233-62-162.ap-south-1.compute.amazonaws.com:5672
@@ -23,4 +17,12 @@ spring:
           max-attempts: 3
           max-interval: 60000
           multiplier: 2
-        default-requeue-rejected: false  
+        default-requeue-rejected: false
+        
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://ec2-13-233-34-229.ap-south-1.compute.amazonaws.com:8762/eureka
+      
