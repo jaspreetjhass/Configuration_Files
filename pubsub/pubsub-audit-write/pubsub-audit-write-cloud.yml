@@ -1,0 +1,26 @@
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://ec2-13-233-34-229.ap-south-1.compute.amazonaws.com:8762/eureka
+      
+spring:
+  rabbitmq:
+    addresses: ec2-13-233-62-162.ap-south-1.compute.amazonaws.com:5672
+    username: admin
+    password: admin
+    listener:
+      simple:
+        auto-startup: true
+        concurrency: 5
+        max-concurrency: 10
+        prefetch: 300
+        transaction-size: 300
+        retry:
+          enabled: true
+          initial-interval: 30000
+          max-attempts: 3
+          max-interval: 60000
+          multiplier: 2
+        default-requeue-rejected: false  
