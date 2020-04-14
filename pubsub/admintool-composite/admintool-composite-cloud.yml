@@ -1,6 +1,6 @@
 spring:
   rabbitmq:
-    addresses: ec2-13-233-62-162.ap-south-1.compute.amazonaws.com:5672
+    addresses: http://ec2-13-233-62-162.ap-south-1.compute.amazonaws.com:5672
     username: admin
     password: admin
     
