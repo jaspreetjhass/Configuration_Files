@@ -13,14 +13,14 @@ spring:
     listener:
       simple:
         auto-startup: true
-        concurrency: 1
-        max-concurrency: 1
+        concurrency: 5
+        max-concurrency: 10
         prefetch: 10
         transaction-size: 10
         retry:
           enabled: true
-          initial-interval: 30000
-          max-attempts: 3
-          max-interval: 90000
+          initial-interval: 20000
+          max-attempts: 5
+          max-interval: 60000
           multiplier: 2
         default-requeue-rejected: false
