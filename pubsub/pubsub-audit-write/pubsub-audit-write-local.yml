@@ -20,7 +20,7 @@ spring:
         retry:
           enabled: true
           initial-interval: 20000
-          max-attempts: 5
+          max-attempts: 2
           max-interval: 60000
           multiplier: 2
         default-requeue-rejected: false
