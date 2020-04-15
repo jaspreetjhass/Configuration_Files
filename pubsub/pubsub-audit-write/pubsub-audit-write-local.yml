@@ -13,8 +13,8 @@ spring:
     listener:
       simple:
         auto-startup: true
-        concurrency: 5
-        max-concurrency: 10
+        concurrency: 1
+        max-concurrency: 1
         prefetch: 10
         transaction-size: 10
         retry:
