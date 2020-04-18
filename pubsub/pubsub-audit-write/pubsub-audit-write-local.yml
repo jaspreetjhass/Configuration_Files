@@ -7,7 +7,7 @@ eureka:
       
 spring:
   rabbitmq:
-    addresses: localhost:5772
+    addresses: localhost:5672
     username: guest
     password: guest
     listener:
