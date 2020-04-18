@@ -3,6 +3,7 @@ spring:
     addresses: localhost:5772
     username: guest
     password: guest
+    requested-heartbeat: 30
     template:
       retry:
         enabled: true
