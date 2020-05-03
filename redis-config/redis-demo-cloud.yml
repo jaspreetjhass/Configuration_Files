@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    config:
+      uri:
+      - http://localhost:9999
+  redis:
+    host: ec2-3-7-66-131.ap-south-1.compute.amazonaws.com
+    port: 6379
+  security:
+    user:
+      name: user
+      password: user
+
+logging:
+  level:
+    com.example.demo: trace
+    io.lettuce.core: trace
