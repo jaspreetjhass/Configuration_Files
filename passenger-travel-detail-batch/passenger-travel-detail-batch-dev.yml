@@ -10,6 +10,9 @@ spring:
     show-sql: true
     properties:
       format-sql: true
+  batch:
+    job:
+      enabled: false    
       
 eureka:
   client:
