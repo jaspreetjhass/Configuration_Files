@@ -12,7 +12,9 @@ spring:
       format-sql: true
   batch:
     job:
-      enabled: false    
+      enabled: false
+    initialize-schema: always  
+      
       
 eureka:
   client:
