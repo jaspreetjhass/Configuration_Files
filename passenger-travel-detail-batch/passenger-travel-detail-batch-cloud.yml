@@ -10,3 +10,15 @@ spring:
     show-sql: true
     properties:
       format-sql: true
+  batch:
+    job:
+      enabled: false
+    initialize-schema: always  
+      
+      
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka-service:8761/eureka
