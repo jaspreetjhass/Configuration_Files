@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://mysql-service:3306/poc
+    url: jdbc:mysql://mysql-server:3306/poc
     username: root
     password: root
     initialization-mode: always
@@ -22,4 +22,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://eureka-service:8761/eureka
+      defaultZone: http://eureka-server:8761/eureka
