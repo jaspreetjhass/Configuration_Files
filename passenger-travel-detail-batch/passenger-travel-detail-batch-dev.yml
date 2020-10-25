@@ -22,4 +22,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://ec2-65-0-138-162.ap-south-1.compute.amazonaws.com:30742/eureka
+      defaultZone: http://eurekaserver-env.eba-kpmhp4gc.ap-south-1.elasticbeanstalk.com:8761/eureka
