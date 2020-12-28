@@ -1,3 +1,8 @@
+spring:
+  elasticsearch:
+    rest:
+      uris:
+      - http://192.168.0.152:9400
 eureka:
   client:
     register-with-eureka: true
