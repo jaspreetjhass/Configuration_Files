@@ -1,12 +1,7 @@
 spring:
-  application:
-    name: spring-boot-rabbitmq-micro
   rabbitmq:
     addresses: localhost:5672
     virtual-host: dev-host
-  profiles:
-    active:
-    - annotation 
 rabbitmq:
   micro:
     prop:

@@ -1,12 +1,7 @@
 spring:
-  application:
-    name: spring-boot-rabbitmq-micro
   rabbitmq:
-    addresses: dns-name:port
-    virtual-host: virtual-host 
-  profiles:
-    active:
-    - annotation  
+    addresses: cloud_url:port
+    virtual-host: cloud-host
 rabbitmq:
   micro:
     prop:
