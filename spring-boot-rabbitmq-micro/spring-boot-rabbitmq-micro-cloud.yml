@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-boot-rabbitmq-micro
+  rabbitmq:
+    addresses: dns-name:port
+    virtual-host: virtual-host 
+  profiles:
+    active:
+    - annotation  
+rabbitmq:
+  micro:
+    prop:
+      exchange: demo-ex
+      routing-key: demo.route
+      queue-name: demo_queue
+      concurrent-consumers: 1
+      max-concurrent-consumers: 5
