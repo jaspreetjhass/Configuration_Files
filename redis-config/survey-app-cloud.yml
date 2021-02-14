@@ -4,5 +4,5 @@ spring:
 survey:
   app:
     redis:
-      host-name: ec2-52-66-244-22.ap-south-1.compute.amazonaws.com
+      host-name: redis-server
       port: 6379
