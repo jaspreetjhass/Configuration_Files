@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: voter-app    
+voter:
+  app:
+    redis:
+      host-name: redis-server 
+      port: 6379
