@@ -1,7 +1,7 @@
 spring:
   application:
     name: survey-app    
-voter:
+survey:
   app:
     redis:
       host-name: ec2-52-66-244-22.ap-south-1.compute.amazonaws.com
