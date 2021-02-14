@@ -6,3 +6,10 @@ survey:
     redis:
       host-name: redis-server
       port: 6379
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka
