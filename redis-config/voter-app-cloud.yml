@@ -4,5 +4,5 @@ spring:
 voter:
   app:
     redis:
-      host-name: redis-server 
+      host-name: ec2-52-66-244-22.ap-south-1.compute.amazonaws.com
       port: 6379
